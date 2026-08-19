@@ -1,5 +1,5 @@
 # ADSO 3564996
-![Profile Picture](src/image/profile.webp) 
+![Profile Picture](src/image/profile.jpeg) 
 ## Andres Soto
 ### Analisis y Desarrollo de Software
 ***Centro de Procesos Industriales y Construcción***
