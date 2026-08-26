@@ -207,7 +207,7 @@
                 </h2>
                 <small>Groups elements together.</small>
                 <h3>Example:</h3>
-                <p>(header>nav)(section>article) ↔️</p>
+                <p>(header>nav)+(section>article) ↔️</p>
                 <h3>Result:</h3>
 <xmp><header>
 <nav></nav>
@@ -219,7 +219,7 @@
             <section>
                 <h2 class="subtitle">
                     14-Lorem
-                    
+                    <span style="font-size: 0.5rem;"> lorem </span>
                 </h2>
                 <small>Generates placeholder text.</small>
                 <h3>Examples:</h3>
@@ -233,25 +233,26 @@
             <section>
                 <h2 class="subtitle">
                     15-HTML Documents
-                    
+                    <span> ! </span>
                 </h2>
                 <small>Creates various HTML document types.</small>
                 <h3>Example:</h3>
-                <p>html:xs —— Documento xhtml 1.0 Strict ↔️</p>
-                <p>html:xt —— Documento xhtml 1.0 Transitional ↔️</p>
-                <p>html:4s —— Documento html 4.01 Strict ↔️</p>
-                <p>html:4t —— Documento html 4.01 Transitional ↔️</p>
-                <p>html:5 —— Documento html 5 ↔️</p>
+                <p>! ↔️</p>
+                
                 <h3>Result:</h3>
-<xmp><html:xs></html:xs>
-<html:xt></html:xt>
-<html:4s></html:4s>
-<html:4t></html:4t></xmp>
+<xmp><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+</html></xmp>
             </section>
 
             <section>
                 <h2 class="subtitle">
                     16-Meta Tags
+                    <span style="font-size: 0.5rem;"> meta </span>
                 </h2>
                 <small>Generates meta tags.</small>
                 <h3>Example:</h3>
@@ -263,7 +264,8 @@ initial-scale=1.0"> </xmp>
 
             <section>
                 <h2 class="subtitle">
-                    17-Challengexyz
+                    17-Challenge
+                    <span>🚀</span>
                 </h2>
                 <small>Generates Emmet challenges for practice.</small>
                 
