@@ -49,6 +49,11 @@ body {
         }
         }
     }
+    section {
+        p, ul, ol {
+            color: #fff9;
+        }
+    }
     &.emmet {
         background: linear-gradient(to top, #7acb16, #2c332e);
         background-attachment: fixed;
