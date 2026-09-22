@@ -25,6 +25,9 @@ body {
                 h3 {
                     font-weight: 300;
                 }
+                ul, ol {
+            color: #fff9;
+                }
             }
         menu.mmenu {
             a:is(:link, :visited){
