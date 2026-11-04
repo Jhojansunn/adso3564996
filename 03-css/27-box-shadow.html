@@ -5,39 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>27-Box Shadow</title>
     <link rel="stylesheet" href="../src/css/master.css">
-    <style>
+     <style>
         section {
             div.box {
-                border: 2px solid #fff9;
-                background-color: #caa0f566;
+                border: 4px solid #fff;
+                background-color: #caa0f533;
                 height: 200px;
                 margin: 2rem auto;
                 width: 300px;
 
                 &.box1 {
-                    box-shadow:0 0 12px #fff;
+                    box-shadow: 0 0 12px #fff;
                 }
                 &.box2 {
-                    box-shadow: -10px -10px 24px #fff;
+                    box-shadow: -10px -10px 24px 0 #fff;
                 }
-                &.box3{
-                    box-shadow: 0 0 20px #fff inset
+                &.box3 {
+                    box-shadow: 0 0 20px #fff inset;
                 }
-                &.box4{
-                    box-shadow: 4px 4px 0 0 #ffcd00
-                                8px 8px 0 0 #003087
-                              12px 12px 0 0 #c8102e;
-                    
+                &.box4 {
+                    box-shadow:  4px  4px 0 0 #ffcd00,
+                                 8px  8px 0 0 #003087,
+                                12px 12px 0 0 #c8102e;
                 }
-
+            }
             div.images {
                 text-align: center;
                 img {
                     width: 160px;
-                    
+                    &:first-of-type {
+                        box-shadow: 0 0 12px #fff;
+                    }
+                    &:last-of-type {
+                        filter: drop-shadow(0 0 12px #fff);
+                    }
                 }
-            }
-
             }
         }
     </style>
@@ -54,7 +56,7 @@
             <img src="../src/image/logo-css.png" alt="CSS">
             <h3>Property that applies outer of inner drop shadows to an elemnts frame , defining offsets, blur, spread, and color</h3>
         </header>
-        <section>
+         <section>
             <h3 class="subtitle">box-shadow: 0 0 12px #fff</h3>
             <div class="box box1"></div>
             <h3 class="subtitle">box-shadow: -10px -10px 24px 0 #fff</h3>

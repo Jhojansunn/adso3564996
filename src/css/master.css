@@ -11,7 +11,7 @@ body {
     min-height: 100dvh;
 
     &.css {
-        background: linear-gradient(to top, #663399, #0e0715);
+        background: url(../image/morado.webp) no-repeat center / cover;
         background-attachment: fixed;
         color: #caa0f5aa;
         main {
@@ -63,7 +63,7 @@ body {
     }
 
     &.html {
-        background: linear-gradient(to top, #e44d26, #39130a);
+        background: url(../image/naranja.png) no-repeat center / cover;
         background-attachment: fixed;
         color: #f9966baa;
         main {
