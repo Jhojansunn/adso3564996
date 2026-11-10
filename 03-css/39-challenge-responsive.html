@@ -22,37 +22,37 @@
             margin: 0 auto;
             max-width: 1120px;
             padding: 1.5rem;
-            width: 100%;
+            width: auto;
         }
         .logo {
             display: block;
             height: auto;
             margin: 0 auto 1.5rem;
-            max-width: 100%;
             width: 240px;
         }
         header menu {
-            display: grid;
-            gap: 1.25rem;
-            grid-template-columns: repeat(4, minmax(0, 1fr));
-            margin: 0;
+            font-size: 0;
+            list-style: none;
+            margin: 2rem 0;
             padding: 0;
+            text-align: center;
         }
         header menu figure {
-            align-items: end;
             background-position: center 35%;
             background-size: cover;
             border: 1px solid rgb(255 255 255 / 22%);
             color: white;
-            display: flex;
+            display: inline-block;
             font-size: 1.05rem;
             font-weight: 600;
             aspect-ratio: 16 / 9;
-            justify-content: center;
-            margin: 0;
+            margin: 0 8px 8px 0;
+            min-height: 170px;
             padding: 0.9rem;
             text-shadow: 0 2px 6px #000;
             transition: transform 0.3s ease;
+            vertical-align: top;
+            width: 230px;
         }
         header menu figure:hover {
             transform: translateY(-6px);
@@ -73,23 +73,24 @@
             background-image: linear-gradient(transparent 70%, rgba(20, 3, 99, 0.932)), url("imgs/nose.jpg");
         }
         .rodillas {
-            display: grid;
-            gap: 1rem;
             margin: 2.5rem auto 0;
         }
         .parent {
-            align-items: stretch;
             background: black;
             border: 1px solid rgb(255 255 255 / 12%);
-            display: grid;
-            grid-template-columns: minmax(150px, 220px) minmax(0, 1fr);
+            display: block;
+            margin-bottom: 1rem;
             padding: 1rem;
+            width: auto;
         }
         .leftk, .leftf {
             aspect-ratio: 1 / 1;
             background-position: center;
             background-size: cover;
-            width: 100%;
+            display: inline-block;
+            margin-right: 1rem;
+            vertical-align: middle;
+            width: 220px;
         }
         .leftk {
             background-image: url("imgs/ochoa.jpg");
@@ -99,8 +100,10 @@
             background-image: url("imgs/ochoa2.jpg");
         }
         .text {
-            align-self: center;
+            display: inline-block;
             padding: 1rem 1.5rem;
+            vertical-align: middle;
+            width: 780px;
         }
 
         .text h3 {
@@ -117,10 +120,25 @@
             line-height: 1.55;
             margin: 0;
         }
+    
 
         @media (max-width: 1023px) {
-            header menu {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
+            header menu figure {
+                width: 350px;
+            }
+
+            .text {
+                width: 520px;
+            }
+        }
+
+        @media (max-width: 850px) {
+            .leftk, .leftf {
+                width: 150px;
+            }
+
+            .text {
+                width: 490px;
             }
         }
 
@@ -129,20 +147,23 @@
                 padding: 1rem;
             }
 
-            header menu {
-                grid-template-columns: repeat(1, minmax(0, 1fr));
+            header menu figure {
+                display: block;
+                margin: 0 0 1rem;
+                width: auto;
             }
 
             .leftk, .leftf {
                 aspect-ratio: 16 / 9;
-            }
-
-            .parent {
-                grid-template-columns: minmax(0, 1fr);
+                display: block;
+                margin: 0 0 1rem;
+                width: auto;
             }
 
             .text {
+                display: block;
                 padding: 1rem 0 0;
+                width: auto;
             }
         }
     </style>
