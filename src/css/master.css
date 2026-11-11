@@ -4,7 +4,7 @@
 /* Styles */
 body {
     
-    background: linear-gradient(to top, #e09239, #b42020);
+    background: url(../image/naranja1.png) no-repeat center / cover;
     color: #fff9;
     background-attachment: fixed;
     font-family: Poppins;
@@ -107,7 +107,7 @@ body {
         }
     }
     &.emmet {
-        background: linear-gradient(to top, #7acb16, #2c332e);
+        background: url(../image/verde.png) no-repeat center / cover;
         background-attachment: fixed;
         color: #baffa9aa;
 

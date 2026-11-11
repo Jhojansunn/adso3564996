@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>42-Parallax</title>
+    <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        body {
+            main {
+                section {
+                    figure.parallax {
+                        outline: 4px solid #663349;
+                        border-radius: 12px;
+                        height: 576px;
+                        margin: 0;
+                        overflow: hidden;
+                        position: relative;
+                        width: 100%;
+
+                        div.layer8, 
+                        div.layer7,
+                        div.layer6,
+                        div.layer5,
+                        div.layer4,
+                        div.layer3,
+                        div.layer2,
+                        div.layer1 {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 576px;
+                            width: 1024px;
+
+                        }
+
+                        div.layer8 {
+                            background: url(imgs/parallax/layer_08.png) repeat-x 0;
+                        }
+                        div.layer7 {
+                            background: url(imgs/parallax/layer_07.png) repeat-x 0;
+                            animation: 30s animLayer infinite linear;
+
+                        }
+                        div.layer6 {
+                            background: url(imgs/parallax/layer_06.png) repeat-x 0;
+                            animation: 25s animLayer infinite linear;
+
+                        }
+                        div.layer5 {
+                            background: url(imgs/parallax/layer_05.png) repeat-x 0;
+                            animation: 20s animLayer infinite linear;
+                        }
+                        div.layer4 {
+                            background: url(imgs/parallax/layer_04.png) repeat-x 0;
+                            animation: 15s animLayer infinite linear;
+                        }
+                        div.layer3 {
+                            background: url(imgs/parallax/layer_03.png) repeat-x 0;
+                            animation: 10s animLayer infinite linear;
+                        }
+                        div.layer2 {
+                            background: url(imgs/parallax/layer_02.png) repeat-x 0;
+                            animation: 5s animLayer infinite linear;
+                        }
+                        div.layer1 {
+                            background: url(imgs/parallax/layer_01.png) repeat-x 0;
+                            animation: 2.5s animLayer infinite linear;
+                        }
+                        div.runner {
+                            background: url(imgs/parallax/running.gif) no-repeat center / cover;
+                            position: absolute;
+                            bottom: 7rem;
+                            left: 8rem;
+                            height: 100px;
+                            width: 100px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @keyframes animLayer {
+            100% { background-position-x: -1240px;}
+        }
+        @media (min-width: 1044px){
+            body {
+                main {
+                    width: 1044px;
+                    section {
+                        width: 1024px;
+                        div.runner {
+                            left: 30rem;
+                        }
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="goback">
+        <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mmenu internal">
+            <h1>42-Parallax</h1>
+            <img src="../src/image/logo-css.png" alt="CSS">
+            <h3>Move at different speed the background</h3>
+        </header>
+        <section>
+            <h3 class="subtitle">Example runner:</h3>
+           <figure class="parallax">
+                <div class="layer8"></div>
+                <div class="layer7"></div>
+                <div class="layer6"></div>
+                <div class="layer5"></div>
+                <div class="layer4"></div>
+                <div class="layer3"></div>
+                <div class="layer2 "></div>
+                <div class="layer1"></div>
+                <div class="runner"></div>
+            </figure>
+        </section>
+    </main>
+</body>
+
+</html>
