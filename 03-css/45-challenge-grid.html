@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>45-Challenge Grid</title>
+    <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        div.gallery {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-areas: " one two three   "
+                       " four two five "
+                       " six six seven ";
+  grid-gap: 0.4rem;
+  margin: 2rem 2rem 2rem 2rem;
+  width: 300px;
+  object-fit: cover;
+  div {
+    background-color: crimson;
+    height: 100px;
+    width: 100px;
+    
+    &:hover{
+      transform: scale(1.1);
+    }
+    
+    &:first-child {
+      background: url(imgs/01_superior_izquierda.png) center/cover;
+      grid-area: one;
+
+    }
+    &:nth-child(2) {
+        background: url(imgs/02_superior_centro.png) center/cover;
+      grid-area: two;
+            height: calc(200px + 0.5rem);
+
+      
+    }
+    &:nth-child(3) {
+      grid-area: three;
+      background: url(imgs/03_superior_derecha.png) center/cover;
+    }
+    &:nth-child(4) {
+      background: url(imgs/04_centro_izquierda.png) center/cover ;
+      grid-area: four;
+    }
+    &:nth-child(5) {
+      grid-area: five;
+      background:url(imgs/05_centro_derecha.png) center/cover ;
+    }
+    &:nth-child(6) {
+      grid-area: six;
+      background: url(imgs/06_inferior_izquierda.png) center/cover;
+      width: calc(200px + 0.2rem);
+    }
+    &:last-child {
+      grid-area: seven;
+      background: url(imgs/07_inferior_derecha.png) center/cover;
+    }
+  }
+}
+div.gallery2   {
+  display: grid;
+  grid-template-columns: 75px 75px 75px 75px; 
+  grid-template-rows: 75px 75px 75px;
+  grid-template-areas: " one one two three   "
+                       " one one four four "
+                       " five six four four ";
+  grid-gap: 0.4rem;
+  margin: 2rem 2rem 2rem 2rem;
+  width: 300px;
+  object-fit: cover;
+  
+  div {
+    background-color: crimson;
+    height: 75px;
+    width: 75px;
+    
+    &:hover{
+      transform: scale(1.1);
+    }
+    
+    &:first-child {
+      background: url(imgs/01_superior_izquierdo.jpg) center/cover;
+      grid-area: one;
+      height: calc(148px + 0.5rem);
+      width: calc(148px + 0.5rem);
+
+
+    }
+    &:nth-child(2) {
+        background: url(imgs/02_superior_centro.jpg) center/cover;
+      grid-area: two;
+
+      
+    }
+    &:nth-child(3) {
+      grid-area: three;
+      background: url(imgs/03_superior_derecho.jpg) center/cover;
+    }
+    &:nth-child(4) {
+      background: url(imgs/06_inferior_derecho.jpg) center/cover ;
+      grid-area: four;
+      height: calc(148px + 0.5rem);
+      width: calc(148px + 0.5rem);
+    }
+    &:nth-child(5) {
+      grid-area: five;
+      background:url(imgs/05_inferior_centro.jpg) center/cover ;
+    }
+    
+    &:last-child {
+      grid-area: six;
+      background: url(imgs/04_inferior_izquierdo.jpg) center/cover;
+    }
+  }
+}
+
+    </style>
+</head>
+<body class="css">
+    <nav class="goback">
+        <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mmenu internal">
+            <h1>45-Challenge Grid</h1>
+            <img src="../src/image/logo-css.png" alt="CSS">
+        </header>
+        <section>
+          <h2>Akatsuki</h2>
+            <div class="gallery">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            </div>
+          <h2>One Piece</h2>
+            <div class="gallery2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
